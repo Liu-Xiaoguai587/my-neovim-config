@@ -17,4 +17,5 @@ vim.opt.wrap = false
 --为指定语言设置缩进
 vim.cmd("autocmd FileType javascript setlocal et sta sw=2 sts=2")
 vim.cmd("autocmd FileType lua setlocal et sta sw=2 sts=2")
+vim.cmd("autocmd FileType vue setlocal et sta sw=2 sts=2")
 

@@ -21,7 +21,7 @@ return {
 		config = function ()
 			require('onenord').setup({
 				disable = {
-					background = "false",
+					--background = "false",
 				}
 			})
 		end
