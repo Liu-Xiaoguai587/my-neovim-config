@@ -25,5 +25,16 @@ return {
     --config = function ()
     --  vim.keymap.set("v", "C-/", "gc")
     --end
+  },
+  {
+    'akinsho/toggleterm.nvim',
+    version = "*",
+    config = function ()
+      require("toggleterm").setup({
+        open_mapping = [[<c-\>]],
+        insert_mappings = false,
+        direction = 'float',
+      })
+    end
   }
 }
