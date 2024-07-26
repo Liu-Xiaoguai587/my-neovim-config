@@ -36,5 +36,6 @@ return {
         direction = 'float',
       })
     end
-  }
+  },
+
 }

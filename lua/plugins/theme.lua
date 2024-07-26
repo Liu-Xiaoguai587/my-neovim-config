@@ -1,10 +1,21 @@
 return {
   {
     "ellisonleao/gruvbox.nvim",
-    config = function()
-      vim.cmd("colorscheme gruvbox")
-    end
+    -- config = function()
+    --   vim.cmd("colorscheme gruvbox")
+    -- end
 
+  },
+
+  {
+    "folke/tokyonight.nvim",
+    -- lazy = false,
+    -- priority = 1000,
+    -- opts = {},
+    -- config = function()
+    --   --vim.cmd[[colorscheme tokyonight]]
+    --   vim.cmd[[colorscheme tokyonight-moon]]
+    -- end
   },
 
   {
@@ -18,13 +29,13 @@ return {
 
   {
     "rmehri01/onenord.nvim",
-    -- config = function ()
-    -- 	require('onenord').setup({
-    -- 		disable = {
-    -- 			--background = "false",
-    -- 		}
-    -- 	})
-    -- end
+    config = function()
+      require('onenord').setup({
+        disable = {
+          --background = "false",
+        }
+      })
+    end
   },
 
   {
@@ -59,5 +70,21 @@ return {
         --virtual_symbol_position = 'eow',
       })
     end
-  }
+  },
+
+  {
+    "rcarriga/nvim-notify",
+    keys = {
+      {
+        "<leader>un",
+        function()
+          require("notify").dismiss({ silent = true, pending = true })
+        end,
+        desc = "Dismiss All Notifications",
+      },
+    },
+    opts = {
+    },
+  },
+
 }

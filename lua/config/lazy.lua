@@ -26,7 +26,12 @@ local plugins = {
 	  "nvim-tree/nvim-web-devicons",
 	  "MunifTanjim/nui.nvim"
 	}
+  },
+
+  {
+    "rcarriga/nvim-notify",
   }
+
 
 }
 local opts = {

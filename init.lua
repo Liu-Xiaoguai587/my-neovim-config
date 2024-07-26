@@ -9,9 +9,5 @@ if vim.g.neovide then
   require("config.neovide").init()
 end
 
---theme
---vim.o.background = "drak"
---vim.cmd("colorscheme gruvbox")
+vim.opt.termguicolors = true
 
---plugins setting
---require("plugin.telescope")
