@@ -10,7 +10,7 @@ vim.opt.rtp:prepend(vim.env.LAZY or lazypath)
 local plugins = {
   {"ellisonleao/gruvbox.nvim"}, --, priority = 1000, config = true}
 
-  {"nvim-treesitter/nvim-treesitter", build = ":TSUpdate"},
+  --{"nvim-treesitter/nvim-treesitter", build = ":TSUpdate"},
 
   {
     "nvim-telescope/telescope.nvim",
