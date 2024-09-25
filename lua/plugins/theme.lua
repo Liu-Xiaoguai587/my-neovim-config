@@ -9,13 +9,13 @@ return {
 
   {
     "folke/tokyonight.nvim",
-    -- lazy = false,
-    -- priority = 1000,
-    -- opts = {},
-    -- config = function()
-    --   --vim.cmd[[colorscheme tokyonight]]
-    --   vim.cmd[[colorscheme tokyonight-moon]]
-    -- end
+    lazy = false,
+    priority = 1000,
+    opts = {},
+    config = function()
+      --vim.cmd[[colorscheme tokyonight]]
+      vim.cmd[[colorscheme tokyonight-night]]
+    end
   },
 
   {
@@ -29,13 +29,13 @@ return {
 
   {
     "rmehri01/onenord.nvim",
-    config = function()
-      require('onenord').setup({
-        disable = {
-          --background = "false",
-        }
-      })
-    end
+    -- config = function()
+    --   require('onenord').setup({
+    --     disable = {
+    --       --background = "false",
+    --     }
+    --   })
+    -- end
   },
 
   {

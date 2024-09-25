@@ -19,4 +19,5 @@ vim.cmd("autocmd FileType javascript setlocal et sta sw=2 sts=2")
 vim.cmd("autocmd FileType lua setlocal et sta sw=2 sts=2")
 vim.cmd("autocmd FileType vue setlocal et sta sw=2 sts=2")
 vim.cmd("autocmd FileType json setlocal et sta sw=2 sts=2")
+vim.cmd("autocmd FileType python setlocal et sta sw=2 sts=2")
 
