@@ -27,8 +27,14 @@
             "stan": { "globalOn": true }
           }
         }
+      }
+    },
+    "asm-lsp": {
+      "command": "asm-lsp",
+      "filetypes": [
+        "asm", "s", "S"
+      ]
     }
-  }
   },
   "diagnostic.refreshOnInsertMode": false,
   "clangd.path": "~/.config/coc/extensions/coc-clangd-data/install/18.1.3/clangd_18.1.3/bin/clangd",
