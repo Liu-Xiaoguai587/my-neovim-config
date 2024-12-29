@@ -4,9 +4,9 @@ return {
     {"MunifTanjim/nui.nvim"},
   },
   config = function ()
-    vim.api.nvim_set_keymap('n', '<CR>', '<cmd>FineCmdline<CR>', {noremap = true})
+    -- vim.api.nvim_set_keymap('n', '<CR>', '<cmd>FineCmdline<CR>', {noremap = true})
     -- remap ':'
-    --vim.api.nvim_set_keymap('n', ':', '<cmd>FineCmdline<CR>', {noremap = true})
+    vim.api.nvim_set_keymap('n', ':', '<cmd>FineCmdline<CR>', {noremap = true})
 
     require('fine-cmdline').setup({
       cmdline = {

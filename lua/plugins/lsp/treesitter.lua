@@ -26,6 +26,4 @@ return {
 	--	query = "rainbow-parens",
 	--	--strategy = require("ts-rainbow").strategy.global,
 	--}
-
-
 }

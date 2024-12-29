@@ -1,17 +1,6 @@
---local builtin = require("telescope.builtin")
---
---vim.keymap.set("n", "<leader><leader>", builtin.find_files)
---vim.keymap.set("n", "<leader>fg", builtin.live_grep)
---
---require("telescope").setup {
---  pickers = {
---    find_files = {theme = "cursor"}
---  }
---}
-
 return {
     "nvim-telescope/telescope.nvim",
-    tag = '0.1.5',
+    tag = '0.1.8',
     dependencies = { 
 		"nvim-lua/plenary.nvim",
 		{
@@ -29,17 +18,17 @@ return {
 		    	 	case_mode = "smart_case",        -- or "ignore_case" or "respect_case"
 		    	 	-- the default case_mode is "smart_case"
 				}
-			}
-			--pickers = {
+			},
+			-- pickers = {
 			--  find_files = {theme = "cursor"}
-			--}
+			-- }
 		}
 
-		local builtin = require("telescope.builtin")	
+		local builtin = require("telescope.builtin")
 		vim.keymap.set("n", "<leader><leader>", builtin.find_files)
 		vim.keymap.set("n", "<leader>fg", builtin.live_grep)
-		vim.keymap.set('n', '<leader>fb', builtin.buffers) 
-		
+		vim.keymap.set('n', '<leader>fb', builtin.buffers)
+
 		require("telescope").setup {
 		  pickers = {
 		    find_files = {theme = "cursor"}

@@ -10,33 +10,20 @@ vim.opt.rtp:prepend(vim.env.LAZY or lazypath)
 local plugins = {
   {"ellisonleao/gruvbox.nvim"}, --, priority = 1000, config = true}
 
-  --{"nvim-treesitter/nvim-treesitter", build = ":TSUpdate"},
-
-  {
-    "nvim-telescope/telescope.nvim",
-    tag = '0.1.5',
-    dependencies = { 'nvim-lua/plenary.nvim' }
-  },
-
-  {
-    "nvim-neo-tree/neo-tree.nvim",
-	branch = "v3.x",
-	dependencies = {
-      "nvim-lua/plenary.nvim",
-	  "nvim-tree/nvim-web-devicons",
-	  "MunifTanjim/nui.nvim"
-	}
-  },
-
-  {
-    "rcarriga/nvim-notify",
+}
+-- local opts = {
+--   install = {
+--     colorscheme = { "gruvbox" }
+--   },
+-- }
+--require("lazy").setup("plugins", opts)
+--require("lazy").setup("plugins.ui", opts)
+require("lazy").setup({
+  spec = {
+    {import = "plugins.lsp"},
+    {import = "plugins.ui"},
+    {import = "plugins.utils"}
   }
-
-
-}
-local opts = {
-  install = {
-    colorscheme = { "gruvbox" }
-  },
-}
-require("lazy").setup("plugins", opts)
+})
+--require("lazy").setup("plugins.lsp", opts)
+--require("lazy").setup("plugins.utils", opts)
